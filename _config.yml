@@ -3,12 +3,13 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: 丶Bó Blog
 subtitle:
-description:
-keywords:
-author: John Doe
-language: en
+description: 前端小学生
+keywords: "前端,javascript"
+author: 丶Bó
+email: zhoub1001@126.com
+## language: en
 timezone:
 
 # URL
