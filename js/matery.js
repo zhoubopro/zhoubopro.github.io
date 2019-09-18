@@ -130,7 +130,7 @@ $(function () {
     $(window).scroll(function () {
         /* 回到顶部按钮根据滚动条的位置的显示和隐藏.*/
         let scroll = $(window).scrollTop();
-        if (scroll < 100) {
+        if (scroll < 240) {
             $nav.addClass('nav-transparent');
             $backTop.slideUp(300);
         } else {
@@ -138,16 +138,16 @@ $(function () {
             $backTop.slideDown(300);
         }
     });
-    	
+
 	$(".nav-menu>li").hover(function(){
 		$(this).children('ul').stop(true,true).show();
 		 $(this).addClass('nav-show').siblings('li').removeClass('nav-show');
-		
+
 	},function(){
 		$(this).children('ul').stop(true,true).hide();
 		$('.nav-item.nav-show').removeClass('nav-show');
 	})
-	
+
     $('.m-nav-item>a').on('click',function(){
             if ($(this).next('ul').css('display') == "none") {
                 $('.m-nav-item').children('ul').slideUp(300);
