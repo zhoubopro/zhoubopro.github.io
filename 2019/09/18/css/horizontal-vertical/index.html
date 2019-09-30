@@ -459,7 +459,7 @@
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        826
+                        857
                     </div>
                     
 
@@ -488,9 +488,9 @@
 <h4 id="No-1-flex方法-传送门"><a href="#No-1-flex方法-传送门" class="headerlink" title="No.1 flex方法 传送门"></a>No.1 flex方法 <a href="https://codepen.io/zhoubopro/pen/pozxQYo" target="_blank" rel="noopener">传送门</a></h4><blockquote>
 <p>现在通用的方法也就是这个啦，因为它的写法够简单直观，兼容性也没什么问题，也是移动端居中方式的首选。<br>利用到了 2 个关键属性：<code>justify-content</code> 和 <code>align-items</code>，都设置为 <code>center</code>，即可实现居中。<br>需要注意的是，一定要把这里的 <code>flex-center</code> 挂在父级元素，才能使得其中 唯一的 子元素居中。</p>
 </blockquote>
-<pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>wrapper flex-center<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>flex horizontal and vertical<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
+<pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>wrapper flex-center<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>flex horizontal and vertical<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
 <pre class=" language-css"><code class="language-css"><span class="token selector"><span class="token class">.wrapper</span> </span><span class="token punctuation">{</span>
   <span class="token property">width</span><span class="token punctuation">:</span> <span class="token number">300</span>px<span class="token punctuation">;</span>
   <span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">300</span>px<span class="token punctuation">;</span>
@@ -505,9 +505,9 @@
 <h4 id="No-2-flex-margin-传送门"><a href="#No-2-flex-margin-传送门" class="headerlink" title="No.2 flex + margin 传送门"></a>No.2 flex + margin <a href="https://codepen.io/zhoubopro/pen/QWLZJYX" target="_blank" rel="noopener">传送门</a></h4><blockquote>
 <p>父级元素设置 <code>flex</code>，子元素设置 <code>margin: auto</code>。</p>
 </blockquote>
-<pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>wrapper<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>flex + margin<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
+<pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>wrapper<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>flex + margin<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
 <pre class=" language-css"><code class="language-css"><span class="token selector"><span class="token class">.wrapper</span> </span><span class="token punctuation">{</span>
   <span class="token property">display</span><span class="token punctuation">:</span> flex<span class="token punctuation">;</span>
   <span class="token property">width</span><span class="token punctuation">:</span> <span class="token number">300</span>px<span class="token punctuation">;</span>
@@ -521,9 +521,9 @@
 <h4 id="No-3-transform-absolute-传送门"><a href="#No-3-transform-absolute-传送门" class="headerlink" title="No.3 transform + absolute 传送门"></a>No.3 transform + absolute <a href="https://codepen.io/zhoubopro/pen/XWrxoJN" target="_blank" rel="noopener">传送门</a></h4><blockquote>
 <p>这个方法，用于图片的居中显示。</p>
 </blockquote>
-<pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>wrapper<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>http://img2.imgtn.bdimg.com/it/u<span class="token punctuation">=</span>1405109477,1383249963&amp;fm<span class="token punctuation">=</span>11&amp;gp<span class="token punctuation">=</span>0.jpg<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
+<pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>wrapper<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>http://img2.imgtn.bdimg.com/it/u<span class="token punctuation">=</span>1405109477,1383249963&amp;fm<span class="token punctuation">=</span>11&amp;gp<span class="token punctuation">=</span>0.jpg<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
 <pre class=" language-css"><code class="language-css"><span class="token selector"><span class="token class">.wrapper</span> </span><span class="token punctuation">{</span>
   <span class="token property">width</span><span class="token punctuation">:</span> <span class="token number">300</span>px<span class="token punctuation">;</span>
   <span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">300</span>px<span class="token punctuation">;</span>
@@ -541,9 +541,9 @@
 <h4 id="No-4-table-cell-传送门"><a href="#No-4-table-cell-传送门" class="headerlink" title="No.4 table-cell 传送门"></a>No.4 table-cell <a href="https://codepen.io/zhoubopro/pen/WNeaLwe" target="_blank" rel="noopener">传送门</a></h4><blockquote>
 <p>利用 <code>table</code> 的单元格居中效果展示，与 <code>flex</code> 一样，需要写在父级元素上。</p>
 </blockquote>
-<pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>wrapper<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>table-cell<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
+<pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>wrapper<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>table-cell<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
 <pre class=" language-css"><code class="language-css"><span class="token selector"><span class="token class">.wrapper</span> </span><span class="token punctuation">{</span>
   <span class="token property">width</span><span class="token punctuation">:</span> <span class="token number">300</span>px<span class="token punctuation">;</span>
   <span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">300</span>px<span class="token punctuation">;</span>
@@ -555,9 +555,9 @@
 <h4 id="No-5-absolute-四个方向的值相等-传送门"><a href="#No-5-absolute-四个方向的值相等-传送门" class="headerlink" title="No.5 absolute + 四个方向的值相等 传送门"></a>No.5 absolute + 四个方向的值相等 <a href="https://codepen.io/zhoubopro/pen/bGbmOrG" target="_blank" rel="noopener">传送门</a></h4><blockquote>
 <p>使用绝对定位布局，设置 <code>margin:auto</code>，并设置 <code>top、left、right、bottom</code> 的值相等即可（不一定要都是 0）。<br>这种方法一般用于弹出层，需要设置弹出层的宽高。</p>
 </blockquote>
-<pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>wrapper<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>absolute + 四个方向的值相等<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
+<pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>wrapper<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>absolute + 四个方向的值相等<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
 <pre class=" language-css"><code class="language-css"><span class="token selector"><span class="token class">.wrapper</span> </span><span class="token punctuation">{</span>
   <span class="token property">width</span><span class="token punctuation">:</span> <span class="token number">300</span>px<span class="token punctuation">;</span>
   <span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">300</span>px<span class="token punctuation">;</span>
@@ -578,9 +578,9 @@
 <h4 id="No-6-grid-传送门"><a href="#No-6-grid-传送门" class="headerlink" title="No.6 grid 传送门"></a>No.6 grid <a href="https://codepen.io/zhoubopro/pen/jONeXLW" target="_blank" rel="noopener">传送门</a></h4><blockquote>
 <p>代码量也很少，但兼容性不如flex，不推荐使用。</p>
 </blockquote>
-<pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>wrapper<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>grid<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
+<pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>wrapper<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>grid<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
 <pre class=" language-css"><code class="language-css"><span class="token selector"><span class="token class">.wrapper</span> </span><span class="token punctuation">{</span>
   <span class="token property">width</span><span class="token punctuation">:</span> <span class="token number">300</span>px<span class="token punctuation">;</span>
   <span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">300</span>px<span class="token punctuation">;</span>
@@ -595,9 +595,9 @@
 <h4 id="No-7-after-传送门"><a href="#No-7-after-传送门" class="headerlink" title="No.7 ::after 传送门"></a>No.7 ::after <a href="https://codepen.io/zhoubopro/pen/zYOmypE" target="_blank" rel="noopener">传送门</a></h4><blockquote>
 <p>::after也可以</p>
 </blockquote>
-<pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>wrapper<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>http://img2.imgtn.bdimg.com/it/u<span class="token punctuation">=</span>1405109477,1383249963&amp;fm<span class="token punctuation">=</span>11&amp;gp<span class="token punctuation">=</span>0.jpg<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
+<pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>wrapper<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>http://img2.imgtn.bdimg.com/it/u<span class="token punctuation">=</span>1405109477,1383249963&amp;fm<span class="token punctuation">=</span>11&amp;gp<span class="token punctuation">=</span>0.jpg<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
 <pre class=" language-css"><code class="language-css"><span class="token selector"><span class="token class">.wrapper</span> </span><span class="token punctuation">{</span>
   <span class="token property">width</span><span class="token punctuation">:</span> <span class="token number">300</span>px<span class="token punctuation">;</span>
   <span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">300</span>px<span class="token punctuation">;</span>
@@ -612,15 +612,15 @@
   <span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">100%</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 
-<span class="token selector"><span class="token class">.wrapper</span> > img </span><span class="token punctuation">{</span>
+<span class="token selector"><span class="token class">.wrapper</span> &gt; img </span><span class="token punctuation">{</span>
   <span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
 <span class="token punctuation">}</span></code></pre>
 <h4 id="No-8-before-传送门"><a href="#No-8-before-传送门" class="headerlink" title="No.8 ::before 传送门"></a>No.8 ::before <a href="https://codepen.io/zhoubopro/pen/qBWJLxK" target="_blank" rel="noopener">传送门</a></h4><blockquote>
 <p>另一种是配合 <code>font-size: 0</code> 共同施展的魔法。</p>
 </blockquote>
-<pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>wrapper<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>http://img2.imgtn.bdimg.com/it/u<span class="token punctuation">=</span>1405109477,1383249963&amp;fm<span class="token punctuation">=</span>11&amp;gp<span class="token punctuation">=</span>0.jpg<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
+<pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>wrapper<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>http://img2.imgtn.bdimg.com/it/u<span class="token punctuation">=</span>1405109477,1383249963&amp;fm<span class="token punctuation">=</span>11&amp;gp<span class="token punctuation">=</span>0.jpg<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
 <pre class=" language-css"><code class="language-css"><span class="token selector"><span class="token class">.wrapper</span> </span><span class="token punctuation">{</span>
   <span class="token property">width</span><span class="token punctuation">:</span> <span class="token number">300</span>px<span class="token punctuation">;</span>
   <span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">300</span>px<span class="token punctuation">;</span>
@@ -637,7 +637,7 @@
   <span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">100%</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 
-<span class="token selector"><span class="token class">.wrapper</span> > img </span><span class="token punctuation">{</span>
+<span class="token selector"><span class="token class">.wrapper</span> &gt; img </span><span class="token punctuation">{</span>
   <span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
   <span class="token property">font-size</span><span class="token punctuation">:</span> <span class="token number">14</span>px<span class="token punctuation">;</span>
 <span class="token punctuation">}</span></code></pre>
